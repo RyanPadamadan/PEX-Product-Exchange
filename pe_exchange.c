@@ -335,7 +335,6 @@ int parse_message(int trader_id, int order_num){
 
 
     if(strncmp(message, "SELL", strlen("SELL")) == 0 || strncmp(message, "BUY", strlen("BUY")) == 0){
-        //do error handling later
 		if(traders[trader_id].connected){
 			printf("[PEX] [T%d] Parsing command: <%s>\n", trader_id, message);
 	
